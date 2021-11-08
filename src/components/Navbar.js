@@ -1,6 +1,10 @@
 import './Navbar.css';
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 import Main from './Main';
+import cartImage from './../images/icon-cart.svg';
+import profileImage from './../images/image-avatar.png';
+import checkout_thumb_image from './../images/image-product-1-thumbnail.jpg';
+import checkout_delete_image from './../images/icon-delete.svg';
 
 const Navbar = () => {
 
@@ -47,10 +51,10 @@ const Navbar = () => {
                 </div>
                 <div className="icon_div">
                     <div onClick={()=>toggleCart()} >
-                        <img className="icon_cart" src="/images/icon-cart.svg" alt="icon-cart"/>
+                        <img className="icon_cart" src={cartImage} alt="icon-cart"/>
                         {cartvalue ? <button>{cartvalue}</button> : <button style={{visibility: 'hidden'}}></button>}
                     </div>
-                    <img className="icon_profile" src="/images/image-avatar.png" alt="icon-profile"/>
+                    <img className="icon_profile" src={profileImage} alt="icon-profile"/>
                 </div>
             </div>
             {checktoggle ? <div className="cart_div">
@@ -60,7 +64,7 @@ const Navbar = () => {
                     {!cartvalue ? <p>Your cart is empty.</p> : 
                         <div className="checkout_div">
                             <div>
-                                <img className="checkout_thumb_image" src="images/image-product-1-thumbnail.jpg" alt="" />
+                                <img className="checkout_thumb_image" src={checkout_thumb_image} alt="" />
                                 <div>
                                     <p>Fall Limited Edition Sneakers</p>
                                     <div>
@@ -68,7 +72,7 @@ const Navbar = () => {
                                         <p>${125*cartvalue}.00</p>
                                     </div>
                                 </div>
-                                <img onClick={()=>removeCart()} className="checkout_delete_image" src="/images/icon-delete.svg" alt="" />
+                                <img onClick={()=>removeCart()} className="checkout_delete_image" src={checkout_delete_image} alt="" />
                             </div>
                             <button>Checkout</button>
                     </div>
