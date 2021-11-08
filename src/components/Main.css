@@ -1,0 +1,366 @@
+@media (min-width: 375px){
+.container{
+    margin: 0px 15vw;
+    display: flex;
+    height: 80vh;
+    position: absolute;
+}
+
+.change_image{
+    display: none;
+}
+
+.left_div{
+    width: 50%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+.large_image{
+    border-radius: 10px;
+    height: 55vh;
+}
+
+.small_image_div{
+    width: 55vh;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.thumb_image{
+    cursor: pointer;
+    height: 10vh;
+    border-radius: 10px;
+}
+
+.thumb_image:hover{
+    opacity: 0.8;
+}
+
+.thumb_image:active {
+	position:relative;
+	top:1px;
+}
+
+.right_div{
+    width: 50%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner_right_div{
+    width: 90%;
+}
+
+.right_div h6{
+  color: hsl(26, 100%, 55%); 
+  margin-bottom: 15px;
+  font-size: 2.5vh;
+}
+
+.right_heading{
+    margin-bottom: 25px;
+    font-size: 5.5vh;
+}
+
+.right_content{
+    margin-bottom: 20px;
+    font-size: 2.4vh;
+}
+
+.price_div{
+    display: flex;
+    margin-bottom: 2px;
+    align-items: center;
+}
+
+.price_div h2{
+    font-weight: bold;
+    font-size: 3.4vh;
+}
+
+.price_div button{
+    margin-left: 1vh;
+    width: 6vh;
+    height: 3vh;
+    border-radius: 5px;
+    background-color: hsl(25, 100%, 94%);
+    border: none;
+    color: hsl(26, 100%, 55%);
+    font-weight: bold;
+    padding: 2px;
+    font-size: 2vh;
+}
+
+.real_price{
+    margin-bottom: 20px;
+    font-size: 2.4vh;
+    opacity: 0.3;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.button_div{
+    display: flex;
+    align-items: center;
+}
+
+.minusbutton{
+    cursor: pointer;
+    height: 6vh;
+    width: 5.2vh;
+    border: none;
+    border-radius: 7px 0px 0px 7px;
+    color: hsl(26, 100%, 55%);
+    font-weight: bold;
+    font-size: 3vh;
+    background-color: rgba(224, 224, 224, 0.3);
+}
+
+.countbutton{
+    height: 6vh;
+    width: 7.5vh;
+    border: none;
+    color: hsl(0, 0%, 0%);
+    font-weight: bold;
+    font-size: 2.26vh;
+    padding-top: 0.6vh;
+    background-color: rgba(224, 224, 224, 0.3);
+}
+
+.plusbutton{
+    cursor: pointer;
+    height: 6vh;
+    width: 5.2vh;
+    border: none;
+    border-radius: 0px 7px 7px 0px;
+    color: hsl(26, 100%, 55%);
+    font-weight: bold;
+    font-size: 3vh;
+    background-color: rgba(224, 224, 224, 0.3);
+}
+
+.addtocart_button{
+    margin-left: 3vh;
+    height: 6vh;
+    width: 30.1vh;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0px 10px 14px -7px hsl(26, 100%, 55%);
+	background-color:hsl(26, 100%, 55%);
+	cursor:pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+}
+
+.addtocart_button:active {
+	position:relative;
+	top:1px;
+}
+
+.addtocart_image{
+    height: 15px;
+}
+
+.addtocart_text{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+}
+
+/* Responsive */
+
+@media (max-width: 375px){
+    .container{
+        margin: 0px;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .change_image{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0px 10px;
+        top: 110px;
+    }
+
+    .change_image_button{
+        height: 30px;
+        width: 30px;
+        background-color: white;
+        border: none;
+        border-radius: 50px;
+    }
+
+    .change_image_button img{
+        height: 10px;
+    }
+
+    .change_image_button:first-child:active {
+        position:relative;
+        right:1px;
+    }
+
+    .change_image_button:last-child:active {
+        position:relative;
+        left:1px;
+    }
+    
+    .large_image{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    
+    .small_image_div{
+        display: none;
+    }
+    
+    .right_div{
+        margin-top: 20px;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .inner_right_div{
+        width: 90%;
+    }
+    
+    .right_div h6{
+      color: hsl(26, 100%, 55%); 
+      margin-bottom: 10px;
+    }
+    
+    .right_heading{
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+    
+    .right_content{
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+
+    .upper_price_div{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        justify-content: space-between;
+    }
+    
+    .price_div{
+        display: flex;
+        margin-bottom: 2px;
+        align-items: center;
+    }
+    
+    .price_div h2{
+        font-weight: bold;
+        font-size: 22.541999999999998px;
+    }
+    
+    .price_div button{
+        margin-left: 6.63px;
+        width: 39.78px;
+        height: 19.89px;
+        border-radius: 5px;
+        background-color: hsl(25, 100%, 94%);
+        border: none;
+        color: hsl(26, 100%, 55%);
+        font-weight: bold;
+        padding: 2px;
+        font-size: 13.26px;
+    }
+    
+    .real_price{
+        font-size: 15px;
+        opacity: 0.3;
+        font-weight: bold;
+        text-decoration: line-through;
+    }
+    
+    .button_div{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .minusbutton{
+        cursor: pointer;
+        height: 39.78px;
+        width: 25%;
+        border: none;
+        border-radius: 7px 0px 0px 7px;
+        color: hsl(26, 100%, 55%);
+        font-weight: bold;
+        font-size: 19.89px;
+        background-color: rgba(224, 224, 224, 0.3);
+    }
+    
+    .countbutton{
+        height: 39.78px;
+        width: 50%;
+        border: none;
+        color: hsl(0, 0%, 0%);
+        font-weight: bold;
+        font-size: 14.983799999999999px;
+        padding-top: 3.978px;
+        background-color: rgba(224, 224, 224, 0.3);
+    }
+    
+    .plusbutton{
+        cursor: pointer;
+        height: 39.78px;
+        width: 25%;
+        border: none;
+        border-radius: 0px 7px 7px 0px;
+        color: hsl(26, 100%, 55%);
+        font-weight: bold;
+        font-size: 19.89px;
+        background-color: rgba(224, 224, 224, 0.3);
+    }
+    
+    .addtocart_button{
+        margin: 15px 0px 30px 0px;
+        height: 39.78px;
+        width: 100%;
+        border: none;
+        border-radius: 7px;
+        box-shadow: 0px 10px 14px -7px hsl(26, 100%, 55%);
+        background-color:hsl(26, 100%, 55%);
+        cursor:pointer;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13.26px;
+    }
+    
+    .addtocart_button:active {
+        position:relative;
+        top:1px;
+    }
+    
+    .addtocart_image{
+        height: 15px;
+    }
+    
+    .addtocart_text{
+        margin-left: 10px;
+        font-weight: bold;
+    }
+}
