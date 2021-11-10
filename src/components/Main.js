@@ -102,14 +102,14 @@ const Main = ({changeCartValue}) => {
                     <p className="right_content">These low-price sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole. they'll withstand everything the weather can offer.</p>
                     <div className="upper_price_div">
                     <div className="price_div">
-                    <h2>${price}.00</h2>
-                    <button>50%</button>
+                    <h2 style={{fontFamily: "sans-serif"}}>${price}.00</h2>
+                    <button style={{fontFamily: "sans-serif"}}>50%</button>
                     </div>
-                    <p className="real_price">${price*2}.00</p>
+                    <p style={{fontFamily: "sans-serif"}} className="real_price">${price*2}.00</p>
                     </div>
                     <div className="button_div">
                         <div className="button_inner_div">
-                         <button onClick={()=>changeQuantity(-1)} className="minusbutton">-</button><button className="countbutton">{quantity}</button><button onClick={()=>changeQuantity(1)} className="plusbutton">+</button>
+                         <button onClick={()=>changeQuantity(-1)} className="minusbutton">-</button><button style={{fontFamily: "sans-serif"}} className="countbutton">{quantity}</button><button onClick={()=>changeQuantity(1)} className="plusbutton">+</button>
                         </div>
                     <button onClick={()=>savetoCart()} className="addtocart_button"><img className="addtocart_image" src={cartImage} alt="icon-cart"/> <p className="addtocart_text">Add to cart</p></button>
                     </div>

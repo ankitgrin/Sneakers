@@ -52,7 +52,7 @@ const Navbar = () => {
                 <div className="icon_div">
                     <div onClick={()=>toggleCart()} >
                         <img className="icon_cart" src={cartImage} alt="icon-cart"/>
-                        {cartvalue ? <button>{cartvalue}</button> : <button style={{visibility: 'hidden'}}></button>}
+                        {cartvalue ? <button style={{fontFamily: "sans-serif"}}>{cartvalue}</button> : <button style={{visibility: 'hidden'}}></button>}
                     </div>
                     <img className="icon_profile" src={profileImage} alt="icon-profile"/>
                 </div>
@@ -68,8 +68,8 @@ const Navbar = () => {
                                 <div>
                                     <p>Fall Limited Edition Sneakers</p>
                                     <div>
-                                        <p>$125.00 × {cartvalue}</p>
-                                        <p>${125*cartvalue}.00</p>
+                                        <p style={{fontFamily: "sans-serif"}}>$125.00 × {cartvalue}</p>
+                                        <p style={{fontFamily: "sans-serif"}}>${125*cartvalue}.00</p>
                                     </div>
                                 </div>
                                 <img onClick={()=>removeCart()} className="checkout_delete_image" src={checkout_delete_image} alt="" />
