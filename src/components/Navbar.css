@@ -234,6 +234,7 @@ li:hover{
 
     .inner_navbar h1{
         font-size: 23px;
+        margin-top: 7px;
     }
 
     #nav-toggle{
@@ -307,7 +308,7 @@ li:hover{
     }
     
     .icon_div div{
-        margin-top: 5px;
+        margin-top: 2px;
         display: flex;
         margin-right: 10px;
     }
